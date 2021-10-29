@@ -1,3 +1,4 @@
-let nome = 'Joao';
-let idade = 90;
+let nome: string = 'Joao';
+let idade: number = 90;
+
 console.log(`Meu nome é ${nome} e eu tenho ${idade} anos`);

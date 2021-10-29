@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "whatch-ts":"tsc –w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/joaoAugustoParaty/node/issues"
   },
-  "homepage": "https://github.com/joaoAugustoParaty/node#readme"
+  "homepage": "https://github.com/joaoAugustoParaty/node#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.6"
+  }
 }
