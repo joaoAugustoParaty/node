@@ -1,4 +1,7 @@
-let nome: string = 'Joao';
-let idade: number = 90;
+import Matematica from './Matematica';
 
-console.log(`Meu nome é ${nome} e eu tenho ${idade} anos`);
+let n1: number = 10;
+let n2: number = 2;
+
+console.log(`SOMA: ${Matematica.somar(n1,n2)}`);
+console.log(`SUBTRAÇÃO: ${Matematica.subtrair(n1,n2)}`);
