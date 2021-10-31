@@ -1,7 +1,14 @@
-import Matematica from './Matematica';
 
-let n1: number = 10;
-let n2: number = 2;
+import validator from 'validator';
 
-console.log(`SOMA: ${Matematica.somar(n1,n2)}`);
-console.log(`SUBTRAÇÃO: ${Matematica.subtrair(n1,n2)}`);
+let name: string = 'joao';
+
+if(validator.isLowercase(name)){
+    console.log(`A string ${name} é toda minúscula.`)
+} else{
+    console.log(`A string ${name} NÃO É toda minúscula.`)
+}
+
+
+
+

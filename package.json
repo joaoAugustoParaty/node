@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/index.js",
-    "whatch-ts":"tsc –w"
+    "whatch-ts": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/joaoAugustoParaty/node#readme",
   "devDependencies": {
-    "@types/node": "^16.11.6"
+    "@types/node": "^16.11.6",
+    "@types/validator": "^13.6.6"
+  },
+  "dependencies": {
+    "validator": "^13.6.0"
   }
 }
