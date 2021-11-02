@@ -7,7 +7,8 @@ const server = express();
 
 //INCLUINDO O MUSTACHE
 server.set('view engine', 'mustashe');
-server.set('views', path.join(__dirname, 'views')); //Arquivo html
+server.set('views', path.join(__dirname, 'viwes'));
+
 server.engine('mustache', mustache());
 
 server.use(express.static(path.join(__dirname, '../public')));
