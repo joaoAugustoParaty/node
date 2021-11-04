@@ -39,6 +39,7 @@ router.get('/contato', (req: Request, res: Response)=>{
   router.get('/sobre', (req: Request, res: Response)=>{
     res.render ('pages/sobre');
   });
-
-
+router.get('/nome', (req: Request, res: Response) =>{
+res.render('pages/nome');
+});
   export default router;
