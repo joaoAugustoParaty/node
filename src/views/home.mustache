@@ -5,7 +5,39 @@
     <body>
         <h1>Título da página</h1>
         <hr/>
+       
+        Opa {{name}} {{lastName}}, tudo bem?
+        {{#showOld}}
+          Como vai a vida?
+        {{/showOld}}
 
-        Opa, tudo bem?
+        {{^showOld}}
+        Beleza?
+        {{/showOld}}
+
+        <hr/>
+        <h2>Produtos</h2>
+
+        <ul>
+            {{#products}}
+            <li>{{ title }} - R$ {{ price }}</li>
+
+        {{/products}}
+
+        </ul>
+
+        <hr/>
+
+        <ul>
+            {{#frasesDoDia}}
+            <li>{{.}}</li>
+
+            {{/frasesDoDia}}
+
+            {{^frasesDoDia}}
+            Não há frases motivacionais hoje.
+            {{/frasesDoDia}}
+
+        </ul>
     </body>
 </html>
