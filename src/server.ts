@@ -7,7 +7,7 @@ const server = express();
 
 //INCLUINDO O MUSTACHE
 server.set('view engine', 'mustashe');
-server.set('views', path.join(__dirname, 'viwes'));
+server.set('views', path.join(__dirname, 'views'));
 
 server.engine('mustache', mustache());
 
