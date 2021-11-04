@@ -6,7 +6,7 @@ import mainRoutes from './routes/index';
 const server = express();
 
 //INCLUINDO O MUSTACHE
-server.set('view engine', 'mustashe');
+server.set('view engine', 'mustache');
 server.set('views', path.join(__dirname, 'views'));
 
 server.engine('mustache', mustache());

@@ -13,7 +13,7 @@ router.get('/', (req: Request, res: Response)=>{
     // organizar as informações desses produtos
     // envia para o template engine
     //res.render integra o código html
-  res.render('home.mustache', {
+  res.render('pages/home', {
     name: 'Joao',
     lastName: 'Augusto',
     age: 90,
@@ -33,11 +33,11 @@ router.get('/', (req: Request, res: Response)=>{
 });
 
 router.get('/contato', (req: Request, res: Response)=>{
-    res.send('Formulário de Contato');
+    res.render ('pages/contato');
   });
 
   router.get('/sobre', (req: Request, res: Response)=>{
-    res.send('Página institucional sobre a empresa');
+    res.render ('pages/sobre');
   });
 
 

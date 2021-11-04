@@ -1,11 +1,4 @@
-<html>
-    <head>
-        <title>Página Home</title>
-    </head>
-    <body>
-        <h1>Título da página</h1>
-        <hr/>
-       
+{{>partials/header}}
         Opa {{name}} {{lastName}}, tudo bem?
         {{#showOld}}
           Como vai a vida?
@@ -20,9 +13,8 @@
 
         <ul>
             {{#products}}
-            <li>{{ title }} - R$ {{ price }}</li>
-
-        {{/products}}
+            {{>partials/productItem}}
+            {{/products}}
 
         </ul>
 
@@ -39,5 +31,4 @@
             {{/frasesDoDia}}
 
         </ul>
-    </body>
-</html>
+        {{>partials/footer}}
