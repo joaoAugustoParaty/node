@@ -25,6 +25,7 @@
     "@types/validator": "^13.6.6"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "fixed": "^0.3.1",
     "mustache": "^4.2.0",

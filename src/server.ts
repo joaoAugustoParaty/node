@@ -1,7 +1,10 @@
 import express, {Request, Response} from 'express';
 import path from 'path';
 import mustache from 'mustache-express';
+import dotenv from 'dotenv';
 import mainRoutes from './routes/index';
+
+dotenv.config();
 
 const server = express();
 
@@ -24,4 +27,4 @@ server.use((req: Request, res: Response)=>{
 });
 
 
-server.listen(80);
+server.listen(process.env.PORT);
